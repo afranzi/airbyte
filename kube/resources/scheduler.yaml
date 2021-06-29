@@ -29,15 +29,15 @@ spec:
                   name: airbyte-env
                   key: CONFIG_ROOT
             - name: DATABASE_HOST
-                valueFrom:
-                  configMapKeyRef:
-                    name: airbyte-env
-                    key: DATABASE_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: airbyte-env
+                  key: DATABASE_HOST
             - name: DATABASE_PORT
-                valueFrom:
-                  configMapKeyRef:
-                    name: airbyte-env
-                    key: DATABASE_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: airbyte-env
+                  key: DATABASE_PORT
             - name: DATABASE_PASSWORD
               valueFrom:
                 configMapKeyRef:
