@@ -92,9 +92,9 @@ spec:
             - name: DB
               value: "postgresql"
             - name: DB_PORT
-              value: "5432"
+              value: "${DB_PORT}"
             - name: POSTGRES_SEEDS
-              value: "airbyte-db-svc"
+              value: "${DB_HOST}"
 
           ports:
             - containerPort: 7233
