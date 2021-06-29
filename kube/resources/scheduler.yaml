@@ -61,7 +61,7 @@ spec:
             - name: WAIT_BEFORE_HOSTS
               value: "5"
             - name: WAIT_HOSTS
-              value: "${DATABASE_HOST}:${DATABASE_PORT}"
+              value: $(DATABASE_HOST):$(DATABASE_PORT)
             - name: WAIT_HOSTS_TIMEOUT
               value: "45"
             - name: WORKSPACE_DOCKER_MOUNT
